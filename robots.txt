@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alphamhs614-cmd.github.io/mohammad-webdesign/sitemap.xml

@@ -2,7 +2,7 @@
 <title>NOVA · نوڤا — استوديو تصميم مواقع ويب</title>
 <meta name="description" content="نوڤا: استوديو تصميم مواقع حديثة ومتحركة للمطاعم والشركات والمتاجر والأفراد.">
 <meta property="og:title" content="NOVA · نوڤا — استوديو تصميم مواقع ويب"><meta name="theme-color" content="#060818">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts.css"><link rel="canonical" href="https://alphamhs614-cmd.github.io/mohammad-webdesign/"><link rel="alternate" hreflang="de" href="https://alphamhs614-cmd.github.io/mohammad-webdesign/webdesign-saarbruecken/">
 <script>
 /* ================= CONFIG — عدّل كل المحتوى من هون ================= */
 const CONFIG={
@@ -38,7 +38,7 @@ const CONFIG={
  workHead:{eyebrow:"الأعمال",title:"أعمال جديدة قيد الإطلاق",lead:"نعمل حاليًا على مشاريع جديدة ستُعرض هنا قريبًا."},
  portfolio:[ /* لما يجهز شغل جديد: {title:"…",type:"…",url:"https://…",image:"…"} */
   {title:"قريبًا",type:"قيد الإطلاق"},{title:"قريبًا",type:"قيد الإطلاق"},{title:"قريبًا",type:"قيد الإطلاق"}],
- contact:{eyebrow:"لنبدأ",title:"هل أنت مستعد لإطلاق موقعك؟",text:"شاركنا فكرتك، وسنحوّلها إلى تجربة رقمية تليق بعلامتك.",label:"ابدأ مشروعك",url:"#" /* ← رابط التواصل */},
+ contact:{eyebrow:"لنبدأ",title:"هل أنت مستعد لإطلاق موقعك؟",text:"شاركنا فكرتك، وسنحوّلها إلى تجربة رقمية تليق بعلامتك.",label:"ابدأ مشروعك",url:"mailto:ergom613@gmail.com?subject=%D8%B7%D9%84%D8%A8%20%D9%85%D9%88%D9%82%D8%B9%20%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%20%E2%80%93%20NOVA" /* ← رابط التواصل (إيميل) */,email:"ergom613@gmail.com"},
  tiktokLabel:"تابعنا على TikTok",tiktokUrl:"https://www.tiktok.com/@47mood47",tiktokHandle:"@47mood47",
  footer:"© ٢٠٢٦ NOVA · نوڤا — استوديو تصميم مواقع ويب",footerBy:"تصميم: محمد"
 };
@@ -85,6 +85,8 @@ h2{font-size:clamp(1.8rem,5vw,2.8rem);text-align:center;margin-bottom:50px}
 .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 34px;border-radius:99px;font-weight:600;text-decoration:none;color:#14123a;background:linear-gradient(90deg,var(--t),var(--v),var(--p));box-shadow:0 0 30px rgba(185,164,255,.35);transition:transform .3s}
 .btn:hover{transform:scale(1.05)}.btn.ghost{background:rgba(255,255,255,.06);color:#fff;border:1px solid rgba(255,255,255,.25);box-shadow:none}.btn.ghost small{color:var(--t);direction:ltr}
+.cta .mail{margin:26px 0 0!important;font-size:.92rem;color:#b9bae4}.cta .mail a{color:var(--t)}
+footer .legal a{color:#9fa0d0;text-decoration:none}footer .legal a:hover{color:#fff}
 footer{position:relative;z-index:3;text-align:center;padding:30px;font-size:.8rem;color:#7d7eb0}
 .fade{opacity:0;transform:translateY(40px)}
 @media(max-width:760px){.const{grid-template-columns:1fr;gap:10px}.const svg{display:none}.step{padding:0 70px 0 0;text-align:right}.step .star{left:auto;right:0;top:0;transform:none}section.c{padding:80px 18px}}
@@ -127,12 +129,12 @@ footer{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;border-top:1p
  <section class="c" id="why"><div class="head" id="h_why"></div><div class="why" id="wy"></div></section>
  <section class="c" id="how"><div class="head" id="h_how"></div><div class="const" id="st"><svg id="line" preserveAspectRatio="none"></svg></div></section>
  <section class="c" id="work"><div class="head" id="h_work"></div><div class="grid work" id="pf"></div></section>
- <section class="c" id="contact"><div class="cta fade"><span class="eyebrow" id="cEy"></span><h2 class="grad" id="ct"></h2><p id="cx"></p><div class="btns"><a class="btn" id="cb"></a><a class="btn ghost" id="tt" target="_blank" rel="noopener"></a></div></div></section>
-</main><footer><span id="ft"></span><span id="ftb"></span></footer>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+ <section class="c" id="contact"><div class="cta fade"><span class="eyebrow" id="cEy"></span><h2 class="grad" id="ct"></h2><p id="cx"></p><div class="btns"><a class="btn" id="cb"></a><a class="btn ghost" id="tt" target="_blank" rel="noopener"></a></div><p class="mail">أو راسلنا مباشرة: <a href="mailto:ergom613@gmail.com" dir="ltr">ergom613@gmail.com</a></p></div></section>
+</main><footer><span id="ft"></span><span id="ftb"></span><span class="legal"><a href="webdesign-saarbruecken/" lang="de">Webdesign Saarbrücken</a> · <a href="impressum/" lang="de">Impressum</a> · <a href="datenschutz/" lang="de">Datenschutz</a></span></footer>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script type="importmap">{"imports":{"three":"./assets/vendor/three/build/three.module.js","three/addons/":"./assets/vendor/three/examples/jsm/"}}</script>
 <script>
 // ---- DOM content from CONFIG ----
 const $=id=>document.getElementById(id),C=CONFIG;
