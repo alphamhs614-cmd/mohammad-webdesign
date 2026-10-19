@@ -7,7 +7,7 @@
 /* ================= CONFIG — عدّل كل المحتوى من هون ================= */
 const CONFIG={
  brand:"NOVA", brandAr:"نوڤا", byline:"تصميم: محمد",
- nav:[{label:"الخدمات",href:"#services"},{label:"لماذا نوڤا",href:"#why"},{label:"آلية العمل",href:"#how"},{label:"الأعمال",href:"#work"},{label:"تواصل",href:"#contact"}],
+ nav:[{label:"الخدمات",href:"#services"},{label:"المنصات والنقل",href:"#platforms"},{label:"لماذا نوڤا",href:"#why"},{label:"آلية العمل",href:"#how"},{label:"الأعمال",href:"#work"},{label:"تواصل",href:"#contact"}],
  navCta:"ابدأ مشروعك",
  heroEyebrow:"استوديو تصميم مواقع ويب",
  heroTitle:"نصمّم مواقع تُبهر من النظرة الأولى",
@@ -88,6 +88,18 @@ h2{font-size:clamp(1.8rem,5vw,2.8rem);text-align:center;margin-bottom:50px}
 .cta .mail{margin:26px 0 0!important;font-size:.92rem;color:#b9bae4}.cta .mail a{color:var(--t)}
 footer .legal a{color:#9fa0d0;text-decoration:none}footer .legal a:hover{color:#fff}
 footer{position:relative;z-index:3;text-align:center;padding:30px;font-size:.8rem;color:#7d7eb0}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;list-style:none;margin:0 auto 40px;max-width:820px}
+.chips li{padding:8px 18px;border-radius:99px;background:rgba(16,19,54,.62);border:1px solid rgba(111,227,214,.3);backdrop-filter:blur(8px);font-weight:600;font-size:.95rem;color:#fff}
+.chips li[dir=ltr]{direction:ltr}
+.mig{display:grid;gap:24px;grid-template-columns:repeat(2,1fr)}
+.mig .card{text-align:right;padding:30px 26px}
+.mig .ex{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.mig .ex span{direction:ltr;padding:4px 12px;border-radius:10px;background:rgba(185,164,255,.14);color:var(--g);font-size:.88rem;font-weight:600}
+.mig ul{list-style:none;color:#c2c3ea;font-size:.95rem}
+.mig li{position:relative;padding-right:22px;margin-bottom:6px}.mig li::before{content:"✦";position:absolute;right:0;color:var(--t);font-size:.8rem;top:.15em}
+.mig a{color:var(--t)}
+.mig .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:1.5rem;background:linear-gradient(135deg,rgba(111,227,214,.18),rgba(185,164,255,.18));border:1px solid rgba(255,255,255,.12);margin-bottom:18px}
+@media(max-width:760px){.mig{grid-template-columns:1fr}}
 .fade{opacity:0;transform:translateY(40px)}
 @media(max-width:760px){.const{grid-template-columns:1fr;gap:10px}.const svg{display:none}.step{padding:0 70px 0 0;text-align:right}.step .star{left:auto;right:0;top:0;transform:none}section.c{padding:80px 18px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.fade{opacity:1;transform:none}}
@@ -126,6 +138,13 @@ footer{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;border-top:1p
 <main>
  <div id="story"></div>
  <section class="c" id="services"><div class="head" id="h_services"></div><div class="grid svc" id="sv"></div></section>
+ <section class="c" id="platforms"><div class="head"><span class="eyebrow">المنصات ونقل المواقع</span><h2 class="grad">نعمل على منصتك… أو ننقل موقعك بالكامل</h2><p>سواء كان موقعك على منصة جاهزة أو تريد موقعًا جديدًا، نصمّم ونعدّل ونطوّر على المنصات التالية:</p></div>
+  <ul class="chips fade" aria-label="المنصات"><li dir="ltr">Wix</li><li dir="ltr">WordPress</li><li dir="ltr">Shopify</li><li dir="ltr">Squarespace</li><li dir="ltr">Webflow</li><li dir="ltr">Jimdo</li><li dir="ltr">Carrd</li><li>برمجة خاصة <span dir="ltr">HTML/CSS/JS</span></li></ul>
+  <div class="mig">
+   <div class="card fade"><div class="ic">🔄</div><h3>نقل الموقع بالكامل بين المنصات</h3><p>ننقل موقعك كاملًا من منصة إلى أخرى بخطة واضحة ودون فقدان المحتوى.</p><div class="ex"><span>Wix → WordPress</span><span>Jimdo → Shopify</span></div><p style="margin-top:12px">للطلب: <a href="#contact">تواصل معنا</a></p></div>
+   <div class="card fade"><div class="ic">📦</div><h3>ماذا ننقل؟</h3><ul><li>جميع الصفحات والنصوص والصور</li><li>المقالات والمنتجات</li><li>نماذج التواصل والطلبات</li><li>تحويلات <span dir="ltr">301</span> للحفاظ قدر الإمكان على ترتيبك في Google</li><li>نقل الدومين وربطه بالمنصة الجديدة</li></ul></div>
+  </div>
+ </section>
  <section class="c" id="why"><div class="head" id="h_why"></div><div class="why" id="wy"></div></section>
  <section class="c" id="how"><div class="head" id="h_how"></div><div class="const" id="st"><svg id="line" preserveAspectRatio="none"></svg></div></section>
  <section class="c" id="work"><div class="head" id="h_work"></div><div class="grid work" id="pf"></div></section>
